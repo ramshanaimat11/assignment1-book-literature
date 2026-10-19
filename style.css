@@ -1,0 +1,55 @@
+/* Apply consistent sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style the main page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f8f5f0;
+    color: #292929;
+}
+
+/* Style the header */
+header {
+    background-color: #473354;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Style the navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+/* Style navigation links */
+nav a {
+    color: #473354;
+    text-decoration: none;
+}
+
+/* Highlight the current page */
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Add space around the main content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 20px;
+}
