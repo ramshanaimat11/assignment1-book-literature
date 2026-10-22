@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Book & Literature Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Book & Literature Club</h1>
+        <p>Join our community of book lovers!</p>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="register.html" aria-current="page">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Event Registration</h2>
+            <p>Fill in the form below to register for an event.</p>
+
+            <form id="registrationForm">
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        required
+                        minlength="3"
+                        autocomplete="name">
+                </div>
+
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        autocomplete="email">
+                </div>
+
+                <div>
+                    <label for="event">Choose an Event:</label>
+                    <select id="event" name="event" required>
+                        <option value="">-- Select an Event --</option>
+                        <option value="Monthly Book Discussion">
+                            Monthly Book Discussion
+                        </option>
+                        <option value="Poetry Reading Session">
+                            Poetry Reading Session
+                        </option>
+                        <option value="Creative Writing Workshop">
+                            Creative Writing Workshop
+                        </option>
+                        <option value="Literary Quiz">
+                            Literary Quiz
+                        </option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Why would you like to join?</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Tell us about your interest in books..."></textarea>
+                </div>
+
+                <button type="submit">Register Now</button>
+            </form>
+
+            <p id="formMessage" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Book & Literature Club</p>
+    </footer>
+
+</body>
+</html>
